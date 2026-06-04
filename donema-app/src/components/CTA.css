@@ -1,0 +1,9 @@
+.cta{ position:relative; overflow:hidden; text-align:center;
+  padding:clamp(5rem,11vw,10rem) 0; }
+.cta__glow{ position:absolute; inset:-20% -10% auto; height:70%; z-index:0;
+  background:radial-gradient(60% 80% at 50% 0%, rgba(var(--accent-rgb),.22), transparent 65%); }
+.cta__inner{ position:relative; z-index:1; max-width:980px; }
+.cta__tag .section-tag{ justify-content:center; margin-bottom:1.4rem; }
+.cta__title{ margin:0 auto; max-width:16ch; }
+.cta__text{ max-width:48ch; margin:1.6rem auto 2.4rem; color:var(--ink-soft); font-size:1.05rem; }
+.cta__actions{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }

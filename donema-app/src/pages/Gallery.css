@@ -1,0 +1,6 @@
+.gfilters{ display:flex; flex-wrap:wrap; gap:.7rem; margin-bottom:2.6rem; }
+.gfilter{ background:none; border:1px solid var(--line); color:var(--ink-soft);
+  padding:.6rem 1.3rem; border-radius:40px; font-size:.84rem; letter-spacing:.03em;
+  transition:.35s var(--ease); }
+.gfilter:hover{ color:var(--ink); border-color:var(--ink-soft); }
+.gfilter.is-active{ background:var(--accent); border-color:var(--accent); color:#14171f; }

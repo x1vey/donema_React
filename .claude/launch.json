@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "donema-app",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "donema-app",
+      "port": 5181
+    },
+    {
+      "name": "donema-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5180"],
+      "port": 5180
+    }
+  ]
+}

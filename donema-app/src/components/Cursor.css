@@ -1,0 +1,14 @@
+.cursor{
+  position:fixed; top:0; left:0; width:10px; height:10px;
+  background:var(--accent); border-radius:50%; pointer-events:none;
+  z-index:9999; mix-blend-mode:difference; transform:translate(-50%,-50%);
+  transition:width .35s var(--ease), height .35s var(--ease), background .35s var(--ease);
+}
+.cursor.is-hover{ width:54px; height:54px; background:var(--accent-2); }
+.cursor.is-view{ width:86px; height:86px; background:#fff; }
+.cursor.is-view::after{
+  content:"View"; color:#111; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:600; position:absolute; inset:0;
+  display:grid; place-items:center;
+}
+@media (hover:none){ .cursor{ display:none; } }
